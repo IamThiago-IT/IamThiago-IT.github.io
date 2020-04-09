@@ -5,11 +5,19 @@
 </head>
 <body>
 	<script type="text/javascript">
-		function ola() {
-return “ola”;
-}
-<p>{2 + 2}</p>
-<p>{ola()}</p>
+		import React, { Component } from 'react';
+		import logo from './logo.svg';
+		import './App.css';
+
+		import HelloWorld from './HelloWorld';// nosso primeiro componente React!
+
+		class App extends Component {
+		 render() {
+		 return <HelloWorld/>;
+		 }
+		}
+
+		export default App;
 	</script>
 </body>
 </html>
